@@ -1,2 +1,3 @@
-# OOP1-1st-Project
-A small school project on how OOP is supposed to be structured.
+# Object-Oriented Programming
+### 2nd Project
+A small project on how OOP is supposed to be structured.
