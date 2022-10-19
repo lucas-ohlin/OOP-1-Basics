@@ -38,9 +38,6 @@ namespace OOP1 {
 
         }
 
-        //Error handling, incase of a user misstypes
-        public Triangle() : this(0f, 0f, 0f) { }
-
         public float GetArea() {
 
             //Easier to read the return
@@ -63,9 +60,6 @@ namespace OOP1 {
             _radius = radius;
 
         }
-
-        //Error handling, incase of a user misstypes
-        public Circle() : this(0f) { }
 
         public float GetArea() {
 
