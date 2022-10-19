@@ -6,7 +6,7 @@ namespace OOP1 {
 
         static void Main(string[] args) {
 
-            //Calling the constructor
+            //Creating a new object using the Circle constructor
             var circle1 = new Circle(5f);
             Console.WriteLine( $"Area of 1st circle: {circle1.GetArea()}");
             Console.WriteLine($"Circumference of 1st circle: {circle1.GetCircumference()}");
@@ -19,6 +19,7 @@ namespace OOP1 {
 
             var triangle1 = new Triangle(5f, 6f, 7f);
             Console.WriteLine( $"Area of 1st triangle: {triangle1.GetArea()}");
+
         }
 
     }
@@ -36,6 +37,9 @@ namespace OOP1 {
             _c = c;
 
         }
+
+        //Error handling, incase of a user misstypes
+        public Triangle() : this(0f, 0f, 0f) { }
 
         public float GetArea() {
 
@@ -59,6 +63,9 @@ namespace OOP1 {
             _radius = radius;
 
         }
+
+        //Error handling, incase of a user misstypes
+        public Circle() : this(0f) { }
 
         public float GetArea() {
 
