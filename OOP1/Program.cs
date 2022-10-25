@@ -26,10 +26,11 @@ namespace OOP1 {
 
     class Triangle {
 
-        float _a;
-        float _b;
-        float _c;
+        private float _a;
+        private float _b;
+        private float _c;
  
+        //Constructor, takes all sides of a triangle
         public Triangle(float a, float b, float c) {
 
             _a = a;
@@ -40,11 +41,11 @@ namespace OOP1 {
 
         public float GetArea() {
 
-            //Easier to read the return
-            float per = (_a + _b + _c) / 2;
+            //Holding var since we don't need to write out the same thing several times
+            float hold = (_a + _b + _c) / 2;
 
             //Math.Pow = power of, returns a double 
-            return (float)Math.Pow( (per * (per - _a) * (per - _b) * (per - _c)), 0.5f);
+            return (float)Math.Pow( (hold * (hold - _a) * (hold - _b) * (hold - _c)), 0.5f);
 
         }
 
@@ -52,9 +53,10 @@ namespace OOP1 {
 
     class Circle {
 
-        float _pi = 3.141f;
-        float _radius;
+        private float _pi = 3.141f;
+        private float _radius;
 
+        //Constructor, takes raidus of the circle
         public Circle(float radius) {
 
             _radius = radius;
@@ -63,19 +65,21 @@ namespace OOP1 {
 
         public float GetArea() {
 
+            //Area of a circle
             return _radius * _radius * _pi;
 
         }
 
         public float GetCircumference() {
 
+            //Circumference of a circle
             return (_radius + _radius) * _pi;
 
         }
 
         public float GetVolume() {
 
-            //Math.Pow = power of, returns a double 
+            //Math.Pow power of, returns a double 
             return 4 / 3 * _pi * (float)Math.Pow(_radius, 3f);
 
         }
